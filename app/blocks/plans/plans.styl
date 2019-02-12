@@ -1,0 +1,41 @@
+.plans
+	display block
+	margin-top 3.4rem
+	&__descr
+		page-text()
+		margin-top 1.13rem
+.plans-block
+	margin-top 1.4rem
+	&__elem
+		display inline-block
+		font-family 'PT Sans', sans-serif
+		font-size 1.3rem
+		line-height 1.6rem
+		padding-left 2rem
+		margin-right 1.2rem
+		position relative
+		font-weight 700
+		color #000
+		&::before
+			content ''
+			background-image url('/images/radio.png')
+			background-size cover
+			background-repeat no-repeat
+			background-position center
+			width 2rem
+			height 1.6rem
+			position absolute
+			top 0
+			left 0
+	&__elem_active
+		&::before
+			content ''
+			background-image url('/images/radio-checked.png')
+			background-size cover
+			background-repeat no-repeat
+			background-position center
+			width 2rem
+			height 1.6rem
+			position absolute
+			top 0
+			left 0

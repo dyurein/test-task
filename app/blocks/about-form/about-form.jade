@@ -1,0 +1,31 @@
+mixin about-form()
+	+b.SECTION.about-form&attributes(attributes)
+		block
+		+e.H2.caption Расскажите о себе чекбоксами
+		+e.P.descr.
+			Отметьте чекбоксами пункты, которые соответствуют вашим скиллам.
+			Кстати, отсутствие опыта не&nbsp;означает, что у&nbsp;вас меньше шансов стать одним из&nbsp;наших товарищей.
+			Это означает, что вы&nbsp;будете получать те&nbsp;задачи, с&nbsp;которыми гарантировано будете справляться.
+		+b.wrapper
+			+b.UL.about-list
+				+e.LI.item._checked БЭМ/OOCSS
+				+e.LI.item._checked Pug (Jade)
+				+e.LI.item._checked Stylus/LESS/SASS
+				+e.LI.item Работаю с SVG
+				+e.LI.item._checked Верстаю семантично
+				+e.LI.item_checked Accessibility (A11Y)
+				+e.LI.item ES2015/ES2016
+			+b.UL.about-list
+				+e.LI.item Gulp/GRUNT
+				+e.LI.item Webpack
+				+e.LI.item Дружу с WebGL
+				+e.LI.item._checked jQuery
+				+e.LI.item Знаю/изучаю Angular
+				+e.LI.item Знаю/изучаю React
+				+e.LI.item Знаю/изучаю Node.js
+			+b.UL.about-list
+				+e.LI.item._checked Использую Git
+				+e.LI.item._checked С глазомером всё ок
+				+e.LI.item._checked._checked Читаю blog.csssr.ru
+				+e.LI.item._checked Я ленивый(-ая)
+				+e.LI.item._checked У меня хороший английский
