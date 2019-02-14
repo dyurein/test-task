@@ -3,11 +3,11 @@
 	margin-top 3.5rem
 	.range-scale
 		display flex
-		width 100%
+		width 99%
 		background-image url(/images/scale.png)
 		background-repeat no-repeat
-		background-position bottom
-		background-size 105% 4rem
+		background-position center
+		background-size 100% 4rem
 		position relative
 		height 5.3rem
  	.range-labels
@@ -21,22 +21,24 @@
 			color #2f1b15
 			position relative
 			cursor pointer
-			top -10px
+			top -24px
 			&:nth-child(3)
 				line-height 1.2rem
-				top 0
+				top -15px
+				left -19px
 				&::before
-					top -32px
+					top -27px
+					left -2px
 				&::after
-					top -57px
+					top -47px
 			&::before
 				content ''
 				position absolute
 				background-image url(/images/short-mark.png)
 				background-repeat no-repeat
 				background-position top center
-				background-size cover
-				top -22px
+				background-size contain
+				top -17px
 				width 16px
 				height 15px
 		&__elem_first
@@ -46,26 +48,25 @@
 				background-image url(/images/long-mark_left.png)
 				background-repeat no-repeat
 				background-position top center
-				background-size cover
-				top -24px
+				background-size contain
+				top -20px
+				left 4px
 				width 16px
 				height 26px
 		&__elem_last
+			right 8px
+			top -17px
 			&::before
 				content ''
 				position absolute
 				background-image url(/images/long-mark_right.png)
 				background-repeat no-repeat
 				background-position top center
-				background-size cover
-				top -23px
-				right 0
+				background-size contain
+				top -26px
+				right -3px
 				width 16px
 				height 26px
-			/*&::before
-				content ''
-				width 0
-				height 0*/
 		&__elem_active
 			font-family 'PT Sans', sans-serif
 			font-size .8rem
@@ -74,8 +75,10 @@
 			color #2f1b15
 			position relative
 			cursor pointer
-			top -10px
+			top -24px
 			&:last-child
+				top -17px
+				right 8px
 				&::after
 					content ''
 					position absolute
@@ -83,10 +86,21 @@
 					background-repeat no-repeat
 					background-position top center
 					background-size cover
-					top -45px
+					top -46px
 					left 92%
 					width 16px
 					height 15px
+				&::before
+					content ''
+					position absolute
+					background-image url(/images/long-mark_right.png)
+					background-repeat no-repeat
+					background-position top center
+					background-size contain
+					top -25px
+					right -3px
+					width 16px
+					height 26px
 			&:first-child
 				&::after
 					content ''
@@ -95,8 +109,8 @@
 					background-repeat no-repeat
 					background-position top center
 					background-size cover
-					top -45px
-					left -5px
+					top -40px
+					left -1px
 					width 16px
 					height 15px
 			&::after
@@ -106,7 +120,7 @@
 				background-repeat no-repeat
 				background-position top center
 				background-size cover
-				top -45px
+				top -39px
 				left -2px
 				width 16px
 				height 15px

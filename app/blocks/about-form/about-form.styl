@@ -1,6 +1,6 @@
 .about-form
 	display block
-	margin-top 3.5rem
+	margin-top 3rem
 	&__caption
 		line-height 3.1rem
 	&__descr
@@ -13,12 +13,17 @@
 			flex-direction column
 			flex-wrap wrap
 			flex 1
+			&:last-child
+				margin-left .8rem
+			&__link
+				color #1f5f97
+				margin-left .4rem
 			&__item
 				font-family 'PT Sans', sans-serif
 				font-weight 700
 				font-size 1.3rem
 				color #000
-				line-height 2.4rem
+				line-height 2.2rem
 				position relative
 				padding-left 1.7rem
 				&::before
@@ -26,8 +31,8 @@
 					position absolute
 					left 0
 					top 20%
-					width 1.4rem
-					height 1.3rem
+					width 1.2rem
+					height 1.2rem
 					background-image url(/images/check-box.png)
 					background-repeat no-repeat
 					background-position center
@@ -37,10 +42,13 @@
 					content ''
 					position absolute
 					left 0
-					top -15%
-					width 1.7rem
-					height 2rem
+					top 0
+					width 1.5rem
+					height 1.7rem
 					background-image url(/images/checked-box.png)
 					background-repeat no-repeat
 					background-position center
 					background-size cover
+			&__item_fixed
+				line-height 1.5rem
+				padding-top .5rem
