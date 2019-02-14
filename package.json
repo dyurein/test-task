@@ -2,7 +2,7 @@
   "name": "csssr-project-template",
   "version": "0.26.2",
   "description": "A template for a quick start.",
-  "homepage":"https://dyurein.github.io/test-task",
+  "homepage":"https://dyurein.github.io/test-task/",
   "keywords": [
     "csssr-project-template",
     "cpt",
@@ -27,7 +27,7 @@
     "lint:templates": "gulp templates:lint",
     "lint": "npm-run-all -p lint:*",
     "predeploy": "npm run build",
-    "deploy": "gulp deploy",
+    "deploy": "gh-pages -d dist",
     "clean": "rimraf dist app/styles/sprites/*.styl",
     "prezip": "npm run production",
     "zip": "gulp zip",
